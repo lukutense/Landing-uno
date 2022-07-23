@@ -17,7 +17,7 @@
                 <div class="enlaces uno" id="enlaces">
                     <a href="index.html">Inicio</a>
                     <a href="">Nosotros</a>
-                    <a href="">Contacto</a>
+                    <a href="#titulo-form">Contacto</a>
                 </div>
             </nav>
             <a href="#" id="icono" class="icono"><i class="fa-solid fa-bars"></i></a>
@@ -25,12 +25,39 @@
                 <div class="textos">
                     <h1>Landing Page Demo</h1>
                     <h2>Definición en pocas palabras</h2>
-                    <button type="menu">Contacto</button>
+                    <button><a href="#titulo-form" id="boton-contacto">Contacto</a></button>
                 </div>
                 <img src="img.png" alt="" id="img">
             </div>
         </header>
+
         <div class="wave"><div style="height: 110px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C97.82,172.21 349.21,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div></div>
+
+        <main>
+            
+            <form class="form-oculto">
+                <div id="elementos-inicio-form">
+                    <h1 id="titulo-form">Contactanos</h1>
+                    <a class="cerrar-boton" href="index.html"><i class="fa-solid fa-circle-xmark icono-boton"></i></a>
+                </div>
+
+                <label for="nombre" class="form-label">Nombre y Apellido:</label> 
+                <input type="text" id="name" class="form-input" required> 
+
+                <label for="numero" class="form-label">Teléfono:</label>
+                <input type="number" id="number" class="form-input" required>
+
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" class="form-input" required>
+
+                <label for="mensaje" class="form-label">Mensaje:</label>
+                <textarea name="" id="info" required></textarea>
+                <small id="form-small">Escribí tu solicitud o motivo de contacto</small>
+
+                <button class="form-submit">Enviar</button>
+            </form>
+        </main>
+        
     
         <script src="https://kit.fontawesome.com/d9b47c7b3f.js" crossorigin="anonymous"></script>
         <script src="main.js"></script>
