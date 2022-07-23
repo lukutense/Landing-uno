@@ -281,7 +281,7 @@ textarea:focus{
         width: 100%;
         flex-wrap: wrap-reverse;
         justify-content: center;
-        padding: 2rem 0 2rem 0;
+        padding: 2rem 0 3.5rem 0;
     }
     .textos{
         width: 60%;
