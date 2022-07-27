@@ -15,6 +15,10 @@ header{
     background: linear-gradient(to right, #89216B, #DA4453);
 }
 
+.bar-menu{
+    font-size: 1.3rem;
+}
+
 nav div a {
     display: flex;
     justify-content: flex-start;
@@ -142,14 +146,45 @@ header .icono{
 main{
     margin-top: 3rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: wrap;
+    justify-content: space-around;
     align-items: center;
 }
 
-.form-oculto{
-    display: none;
+.redes{
+    height: 504px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: flex-start;
+    box-shadow: -3px 5px 34px -11px rgba(0,0,0,0.75);
+    padding: 1rem;
+    position: relative;
+    bottom: 7px;
 }
+
+.facebook, .twitter, .telefono, .instagram{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0 1.5rem 0;
+    border-bottom: 1px solid #c3c3c3;
+}
+
+.icon-social{
+    font-size: 2rem;
+    color: #DA4453;
+    padding-bottom: 0.5rem;
+}
+
+.icon-social{
+
+}
+
+/* .form-oculto{
+    display: none;
+} */
 
 #titulo-form{
     padding: 1rem 0 1rem 0;
@@ -162,11 +197,6 @@ main{
     align-items: center;
 }
 
-.icono-boton{
-    font-size: 1.5rem;
-    color: #DA4453;
-}
-
 form{
     width: 400px;
     padding: 1rem;
@@ -175,7 +205,7 @@ form{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    box-shadow: -3px 5px 34px -11px rgba(0,0,0,0.75);
 }
 
 .form-label{
@@ -217,6 +247,8 @@ textarea:focus{
     outline: none;
     background: linear-gradient(to right, #89216B, #DA4453);
     color:#fff;
+    cursor: pointer;
+    box-shadow: -3px 5px 34px -11px rgba(0,0,0,0.75);
 }
 
 @media (max-width: 1136px){
@@ -249,6 +281,10 @@ textarea:focus{
         border-radius: 3px;
         padding: 6px 0 6px 0;
     }
+
+    main{
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 700px){
@@ -261,6 +297,15 @@ textarea:focus{
     .textos h2 {
         font-size: 14px;
     }
+
+    .redes{
+        width: 300px;
+    }
+
+    .facebook, .twitter, .telefono, .instagram{
+        width: 300px;
+    }
+
     form{
         width: 300px;
     }
@@ -306,6 +351,14 @@ textarea:focus{
 }
 
 @media (max-width:500px){
+    .redes{
+        width: 230px;
+    }
+
+    .facebook, .twitter, .telefono, .instagram{
+        width: 230px;
+    }
+
     form{
         width: 230px;
     }

@@ -20,11 +20,11 @@ const clickContacto = ()=>{
 
 clickContacto()
 
-const clickCerrarForm = ()=>{
+/* const clickCerrarForm = ()=>{
     cerrarBoton.addEventListener('click', (e)=>{
         e.preventDefault()
         formOculto.classList.add('form-oculto')
     })
 }
 
-clickCerrarForm()
+clickCerrarForm() */
